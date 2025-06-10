@@ -189,7 +189,7 @@ header .hamburger{display: none;}
     cursor: pointer;
 }
 .proj_services .services_container ul li:hover{box-shadow: 0 0 1.5rem var(--primary-color);}
-.proj_services .services_container ul li h3{font-size: 1.5rem;letter-spacing: .1rem;color: var(--primary-color);}
+.proj_services .services_container ul li h3{font-size: 1.5rem;letter-spacing: .1rem;color: white;}
 .proj_services .services_container ul li p{letter-spacing: .1rem;font-size: 1.2rem; color: white;}
 
 /* Education Section */
@@ -244,10 +244,10 @@ footer .footer_container{padding: 1.5rem;display: flex;justify-content: space-ev
 footer .img img{width: 20rem;height: 20rem;}
 
 footer .more_info{display: flex;flex-direction: column;gap: .7rem;}
-footer .more_info h1{font-size: 2.5rem;color: var(--primary-color);}
-footer .more_info p{font-size: 1.2rem;}
+footer .more_info h1{font-size: 2.5rem;color: var(--primary-color); letter-spacing: .1rem;}
+footer .more_info p{font-size: 1.2rem; color: white; letter-spacing: .1rem;}
 
-footer .social-accounts h1{font-size: 2.5rem;text-align: center;color: var(--primary-color);}
+footer .social-accounts h1{font-size: 2.5rem;text-align: center;color: var(--primary-color); letter-spacing: .1rem;}
 footer .social-accounts{display: flex;flex-direction: column;gap: 1.5rem;}
 footer .social-accounts .social_links{display: flex;align-items: center;gap: 1.5rem;}
 

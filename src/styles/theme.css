@@ -6,8 +6,8 @@
 }
 
 .dark-theme{
-    --soft-black: white;
+    --soft-black: #e5e5e5;
     --white-color: #333;
-    --primary-color: maroon;
-    --soft-primary-color: rgba(128, 0, 0, 0.429);
+    --primary-color: #f30954;
+    --soft-primary-color: rgba(243, 9, 83, 0.426);
 }

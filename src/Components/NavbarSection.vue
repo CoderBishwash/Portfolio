@@ -36,13 +36,15 @@ const tottletheme = () => {
                         <a href="#contact">Contact</a>
                     </nav>
 
-                    <div class="theme" @click="tottletheme()">
+                    <div class="header_icons">
+                        <div class="theme" @click="tottletheme()">
                         <i v-if="themeicon" class="fas fa-moon"></i>
                         <i v-else class="fas fa-sun" ></i>
                     </div>
 
                     <div class="hamburger">
                         <i v-if="!showham" class="fa-solid fa-bars" @click="ham_menu()"></i>
+                    </div>
                     </div>
 
             </header>
@@ -107,5 +109,10 @@ const tottletheme = () => {
 }
 .theme:hover{
     background-color: var(--primary-color);
+}
+.header_icons{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
 }
 </style>
