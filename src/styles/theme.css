@@ -1,0 +1,13 @@
+:root{
+    --primary-color: paleturquoise;
+    --soft-black: #333;
+    --white-color: white;
+    --soft-primary-color: rgba(175, 238, 238, 0.427);
+}
+
+.dark-theme{
+    --soft-black: white;
+    --white-color: #333;
+    --primary-color: maroon;
+    --soft-primary-color: rgba(128, 0, 0, 0.429);
+}
