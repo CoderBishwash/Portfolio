@@ -20,21 +20,21 @@ const ExpArray = [
 
 <section class="experience wrapper" id="experience">
 
-<div class="heading" data-aos="fade-up">
+<div class="heading" data-aos="fade-in">
     <h1>Experience</h1>
 </div>
 
 <div class="experience_description">
     <div class="experience_box" v-for="exp in ExpArray" :key="exp.id">
 
-        <div class="bullet" data-aos="fade-up-right">
+        <div class="bullet" data-aos="fade-right">
 
         </div>
 
         <div class="content_box">
-            <h4 data-aos="fade-left">{{ exp.title }}</h4>
+            <h4 data-aos="fade-in">{{ exp.title }}</h4>
             <h3>{{ exp.org }}</h3>
-            <p data-aos="fade-left">{{ exp.description }}</p>
+            <p data-aos="fade-in">{{ exp.description }}</p>
         </div>
 
     </div>

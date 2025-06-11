@@ -131,40 +131,40 @@ export default {
 
 <section class="contact wrapper" id="contact">
 
-<div class="heading" data-aos="fade-up">
+<div class="heading" data-aos="fade-in">
     <h1>Contact</h1>
 </div>
 
 <div class="container">
     <div class="quote">
-        <h1 data-aos="fade-right">Let's Collaborate Together!</h1>
+        <h1 data-aos="fade-in">Let's Collaborate Together!</h1>
     </div>
 
     <form @submit.prevent="sendEmail" >
-        <div class="inputs" data-aos="fade-left">
-            <label for="name" data-aos="fade-left">Your Name</label>
+        <div class="inputs" data-aos="fade-in">
+            <label for="name" data-aos="fade-in">Your Name</label>
             <input
              :class="{ 'error_display': errors.name }"
              @input="clearError('name')"
-             type="text" placeholder="Enter your name" id="name" v-model="formData.name" >
+             type="text" placeholder="Enter your name" id="name" v-model="formData.name" data-aos="fade-in">
              <p v-if="errors.name" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.name }}</p>
 
-            <label for="email" data-aos="fade-left">Your Email</label>
+            <label for="email" data-aos="fade-in">Your Email</label>
             <input 
              :class="{ 'error_display': errors.email }"
             @input="clearError('email')"
-            type="email" placeholder="Enter your email" id="email" v-model="formData.email" >
+            type="email" placeholder="Enter your email" id="email" v-model="formData.email" data-aos="fade-in">
             <p v-if="errors.email" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.email }}</p>
 
-            <label for="message" data-aos="fade-left">Project details</label>
+            <label for="message" data-aos="fade-in">Project details</label>
             <textarea 
             :class="{ 'error_display': errors.message }"
             @input="clearError('message')"
-            id="message" v-model="formData.message" rows="5" placeholder="Enter your message" ></textarea>
+            id="message" v-model="formData.message" rows="5" placeholder="Enter your message" data-aos="fade-in"></textarea>
             <p v-if="errors.message" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.message }}</p>
         </div>
 
-        <div class="btn" data-aos="zoom-in">
+        <div class="btn" data-aos="fade-in">
             <button type="submit" :disabled="loading || (formSubmitted && !isFormValid)">
                 {{ loading ? 'Sending' : 'Send Message' }}
                 <img class="loading_img" v-if="loading" src="/images/loading.gif" alt="loading">

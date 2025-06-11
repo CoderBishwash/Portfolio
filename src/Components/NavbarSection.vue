@@ -1,15 +1,8 @@
 <script setup>
 
-import { ref } from 'vue';
-
-import { useDark, useToggle } from '@vueuse/core'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+import { ref,onMounted } from 'vue';
 
 let showham = ref(false);
-let themeicon = ref(false);
-
 let ham_menu = () => {
     showham.value = true;
 }
@@ -18,10 +11,32 @@ let close_navbar = () => {
     showham.value = false;
 }
 
-const tottletheme = () => {
-    document.body.classList.toggle('dark-theme');
-    themeicon.value = !themeicon.value;
-}
+const userTheme = ref(''); // Default theme
+
+// Function to set the theme and store it in local storage
+const setTheme = (theme) => {
+  localStorage.setItem('user-theme',theme);
+  userTheme.value = theme;
+  document.documentElement.className = theme;
+};
+
+// Function to toggle the theme
+const toggleTheme = () => {
+  const activeTheme = localStorage.getItem('user-theme');
+  if (activeTheme === '') {
+    setTheme('light-theme');
+  } else {
+    setTheme('');
+  }
+};
+
+// On component mount, retrieve the theme from local storage
+onMounted(() => {
+  const storedTheme = localStorage.getItem('user-theme');
+  if (storedTheme) {
+    setTheme(storedTheme);
+  } 
+});
 
 </script>
 <template>
@@ -42,14 +57,14 @@ const tottletheme = () => {
                     </nav>
 
                     <div class="header_icons">
-                        <div class="theme" @click="tottletheme()">
-                        <i v-if="themeicon" class="fas fa-moon"></i>
-                        <i v-else class="fas fa-sun" ></i>
-                    </div>
+                        <div class="theme" @click="toggleTheme()">
+                                <i v-if="userTheme == 'light-theme'" class="fas fa-moon"></i>
+                                <i v-else class="fas fa-sun" ></i>
+                        </div>
 
-                    <div class="hamburger">
-                        <i v-if="!showham" class="fa-solid fa-bars" @click="ham_menu()"></i>
-                    </div>
+                        <div class="hamburger">
+                                <i v-if="!showham" class="fa-solid fa-bars" @click="ham_menu()"></i>
+                        </div>
                     </div>
 
             </header>

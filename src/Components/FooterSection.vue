@@ -4,7 +4,7 @@
 
 <div class="footer_container">
 
-<div class="img" data-aos="zoom-in">
+<div class="img" data-aos="fade-in">
     <img src="../images/aarko_profile.png" alt="">
 </div>
 

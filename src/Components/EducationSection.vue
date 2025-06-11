@@ -32,7 +32,7 @@ const EduArray = [
 
 <section class="education wrapper" id="education">
 
-<div class="heading" data-aos="fade-up">
+<div class="heading" data-aos="fade-in">
     <h1>Education</h1>
 </div>
 
@@ -40,14 +40,14 @@ const EduArray = [
 
     <div class="education_box" v-for="edu in EduArray" :key="edu.id">
 
-        <div class="bullet" data-aos="fade-up-right">
+        <div class="bullet" data-aos="fade-right">
 
         </div>
 
         <div class="content_box">
-            <h4 data-aos="fade-left">{{ edu.title }}</h4>
+            <h4 data-aos="fade-in">{{ edu.title }}</h4>
             <h3>{{ edu.description }}</h3>
-            <div class="grade" data-aos="fade-up">
+            <div class="grade" data-aos="fade-in">
                 <p>{{ edu.date }}</p>
                 <span>
                     <img :src="edu.image" :alt="edu.image">
