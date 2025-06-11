@@ -4,10 +4,6 @@
 
 <div class="footer_container">
 
-<div class="img" data-aos="fade-in">
-    <img src="../images/aarko_profile.png" alt="">
-</div>
-
 <div class="more_info">
     <h1>Details</h1>
     <p>Address: Bharatpur-2, Chitwan, Nepal</p>
