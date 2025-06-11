@@ -8,6 +8,6 @@
 .dark-theme{
     --soft-black: #e5e5e5;
     --white-color: #333;
-    --primary-color: #f30954;
-    --soft-primary-color: rgba(243, 9, 83, 0.426);
+    --primary-color: blue;
+    --soft-primary-color: rgba(0, 0, 255, 0.426);
 }

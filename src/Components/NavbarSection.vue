@@ -2,6 +2,11 @@
 
 import { ref } from 'vue';
 
+import { useDark, useToggle } from '@vueuse/core'
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
+
 let showham = ref(false);
 let themeicon = ref(false);
 

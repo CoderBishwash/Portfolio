@@ -238,19 +238,37 @@ header .hamburger{display: none;}
 .contact .container form .btn button:hover{background-color: var(--primary-color);color: var(--soft-black);cursor: pointer;}
 
 /* Footer Section */
-footer{background-color: var(--soft-primary-color);}
+footer{background-color: rgb(42, 41, 41);}
 footer .footer_container{padding: 1.5rem;display: flex;justify-content: space-evenly;align-items: center;}
 
 footer .img img{width: 20rem;height: 20rem;}
 
 footer .more_info{display: flex;flex-direction: column;gap: .7rem;}
-footer .more_info h1{font-size: 2.5rem;color: var(--primary-color); letter-spacing: .1rem;}
+footer .more_info h1{font-size: 2.5rem;color: white; letter-spacing: .1rem;}
 footer .more_info p{font-size: 1.2rem; color: white; letter-spacing: .1rem;}
 
-footer .social-accounts h1{font-size: 2.5rem;text-align: center;color: var(--primary-color); letter-spacing: .1rem;}
-footer .social-accounts{display: flex;flex-direction: column;gap: 1.5rem;}
-footer .social-accounts .social_links{display: flex;align-items: center;gap: 1.5rem;}
+footer .social-accounts h1{font-size: 2.5rem;text-align: center;color: white; letter-spacing: .1rem;}
+footer .social-accounts{display: flex; flex-direction: column; gap: 3rem;}
+footer .social-accounts .social_links{
+    display: flex;
+    gap: 2rem;
+}
+footer .social-accounts a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--primary-color);
+    border: .1rem solid paleturquoise;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .social-accounts a i{font-size: 1.7rem;transition: .5s ease; color: paleturquoise;}
+footer .social-accounts a i:hover{color: paleturquoise;transform: scale(1.2) translateY(-.3rem);text-shadow: 0 0 2rem paleturquoise,0 0 4rem paleturquoise;}
+footer .social-accounts a:hover{border: .1rem solid paleturquoise;background-color: #333;}
 
-footer .footer_line{width: 100%;height: .1rem;background-color: var(--primary-color);}
+footer .footer_line{width: 100%;height: .1rem;background-color: white;}
 
-footer .copyright{text-align: center;padding: 1rem;font-size: 1rem;}
+footer .copyright{text-align: center;padding: 1rem;font-size: 1rem; color: white;}
