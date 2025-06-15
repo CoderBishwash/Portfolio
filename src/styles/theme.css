@@ -4,7 +4,12 @@
     --white-color: white;
     --soft-primary-color: rgba(175, 238, 238, 0.427);
 }
-
+.dark-theme{
+    --primary-color: paleturquoise;
+    --soft-black: #333;
+    --white-color: white;
+    --soft-primary-color: rgba(175, 238, 238, 0.427);
+}
 .light-theme{
     --soft-black: #e5e5e5;
     --white-color: #333;

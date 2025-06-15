@@ -1,6 +1,7 @@
-<script setup>
+<script>
 
 import { ref,onMounted } from 'vue';
+
 
 let showham = ref(false);
 let ham_menu = () => {
@@ -10,33 +11,42 @@ let ham_menu = () => {
 let close_navbar = () => {
     showham.value = false;
 }
-
-const userTheme = ref(''); // Default theme
-
-// Function to set the theme and store it in local storage
-const setTheme = (theme) => {
-  localStorage.setItem('user-theme',theme);
-  userTheme.value = theme;
-  document.documentElement.className = theme;
+export default{
+  data() {
+    return {
+      currentTheme: 'light-theme', // Default theme
+    };
+  },
+  mounted() {
+    // Checking local storage for a saved theme when the component mounts
+    const savedTheme = localStorage.getItem('userTheme');
+    if (savedTheme) {
+      this.currentTheme = savedTheme;
+      this.applyTheme(savedTheme);
+    } else {
+      // If no theme is saved, apply the default theme
+      this.applyTheme(this.currentTheme);
+    }
+  },
+  methods: {
+    toggleTheme() {
+      // Toggle the theme
+      this.currentTheme = this.currentTheme === 'light-theme' ? 'dark-theme' : 'light-theme';
+      
+      // Save the new theme to local storage
+      localStorage.setItem('userTheme', this.currentTheme);
+      
+      // Apply the theme to the DOM
+      this.applyTheme(this.currentTheme);
+    },
+    applyTheme(theme) {
+      // Apply CSS classes to the <body> element (or your root element)
+      // where you would link your CSS styles.
+      document.body.classList.remove('light-theme', 'dark-theme'); // Remove existing
+      document.body.classList.add(`${theme}`); // Add the new one
+    },
+  },
 };
-
-// Function to toggle the theme
-const toggleTheme = () => {
-  const activeTheme = localStorage.getItem('user-theme');
-  if (activeTheme === '') {
-    setTheme('light-theme');
-  } else {
-    setTheme('');
-  }
-};
-
-// On component mount, retrieve the theme from local storage
-onMounted(() => {
-  const storedTheme = localStorage.getItem('user-theme');
-  if (storedTheme) {
-    setTheme(storedTheme);
-  } 
-});
 
 </script>
 <template>

@@ -41,7 +41,7 @@ displayknowledge();
     <p data-aos="fade-left" data-aos-duration="900">I'm a passionate front-end developer with a focus on creating user-centered and visually stunning websites. I excel in translating brand identities into engaging online experiences that drive results. I'm eager to contribute my skills to innovative projects and collaborate with creative teams.</p>
     <h3 data-aos="fade-left" data-aos-duration="1200">I have acquired knowledges in <span>{{ knowledge }}</span></h3>
 
-    <Vue3Marquee :duration="10" style="width: 30rem; border-radius: 1rem;" :gradient="true" :gradient-length="'1rem'" :gradient-color="[175,238,238]" :clone="true">
+    <Vue3Marquee :duration="10" style="width: 35rem; border-radius: 1rem;"  :clone="true">
         <div class="icons">
             <i class="fa-brands fa-html5" style="color: #E34F26;"></i>       
             <i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>    
