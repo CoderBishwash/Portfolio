@@ -146,21 +146,21 @@ export default {
             <input
              :class="{ 'error_display': errors.name }"
              @input="clearError('name')"
-             type="text" placeholder="Enter your name" id="name" v-model="formData.name" data-aos="fade-in">
+             type="text" placeholder="Enter your name" id="name" v-model="formData.name" >
              <p v-if="errors.name" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.name }}</p>
 
             <label for="email" data-aos="fade-in">Your Email</label>
             <input 
              :class="{ 'error_display': errors.email }"
             @input="clearError('email')"
-            type="email" placeholder="Enter your email" id="email" v-model="formData.email" data-aos="fade-in">
+            type="email" placeholder="Enter your email" id="email" v-model="formData.email">
             <p v-if="errors.email" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.email }}</p>
 
             <label for="message" data-aos="fade-in">Project details</label>
             <textarea 
             :class="{ 'error_display': errors.message }"
             @input="clearError('message')"
-            id="message" v-model="formData.message" rows="5" placeholder="Enter your message" data-aos="fade-in"></textarea>
+            id="message" v-model="formData.message" rows="5" placeholder="Enter your message"></textarea>
             <p v-if="errors.message" style="font-size: 1.2rem; letter-spacing: .1rem;" class="error-message">{{ errors.message }}</p>
         </div>
 

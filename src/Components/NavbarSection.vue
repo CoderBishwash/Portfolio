@@ -1,20 +1,12 @@
 <script>
 
-import { ref,onMounted } from 'vue';
+import { onMounted } from 'vue';
 
-
-let showham = ref(false);
-let ham_menu = () => {
-    showham.value = true;
-}
-
-let close_navbar = () => {
-    showham.value = false;
-}
 export default{
   data() {
     return {
-      currentTheme: 'light-theme', // Default theme
+      currentTheme: 'dark-theme', // Default theme
+      showham: false
     };
   },
   mounted() {
@@ -29,6 +21,12 @@ export default{
     }
   },
   methods: {
+    ham_menu(){
+      this.showham = true;
+    },
+    close_navbar(){
+      this.showham = false;
+    },
     toggleTheme() {
       // Toggle the theme
       this.currentTheme = this.currentTheme === 'light-theme' ? 'dark-theme' : 'light-theme';
@@ -67,8 +65,8 @@ export default{
                     </nav>
 
                     <div class="header_icons">
-                        <div class="theme" @click="toggleTheme()">
-                                <i v-if="userTheme == 'light-theme'" class="fas fa-moon"></i>
+                        <div class="theme" @click="toggleTheme()" style=" transition: background-color 0.3s ease, color 0.3s ease;">
+                                <i v-if="currentTheme == 'light-theme'" class="fas fa-moon"></i>
                                 <i v-else class="fas fa-sun" ></i>
                         </div>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 *{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;font-family: "Exo 2", sans-serif;list-style-type: none;}
 html{font-size: 62.5%; scroll-behavior: smooth; scroll-padding-top: 12rem;}
-body{background-color: var(--soft-black);color: var(--white-color);}
+body{background-color: var(--soft-black);color: var(--white-color); transition: background-color 0.5s ease, color 0.5s ease; }
 
 /* for headings */
 .heading{ display: flex;flex-direction: column;align-items: center;}
