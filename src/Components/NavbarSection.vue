@@ -77,11 +77,11 @@ export default{
 
                     <div class="ham_navbar animate__animated animate__fadeInRight" v-if="showham">
                         <img src="../images/close.png" alt="close" @click="close_navbar()">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#project">Projects & Services</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#home" @click="close_navbar()">Home</a>
+                        <a href="#about" @click="close_navbar()">About</a>
+                        <a href="#skills" @click="close_navbar()">Skills</a>
+                        <a href="#project" @click="close_navbar()">Projects & Services</a>
+                        <a href="#contact" @click="close_navbar()">Contact</a>
                     </div>
 </template>
 <style scoped>
