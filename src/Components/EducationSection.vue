@@ -32,10 +32,6 @@ const EduArray = [
 
 <section class="education wrapper" id="education">
 
-<div class="heading" data-aos="fade-in">
-    <h1>Education</h1>
-</div>
-
 <div class="education_description">
 
     <div class="education_box" v-for="edu in EduArray" :key="edu.id">

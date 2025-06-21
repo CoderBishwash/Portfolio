@@ -1,9 +1,13 @@
 <script setup>
 
 import { ref } from 'vue';
+import EducationSection from './EducationSection.vue';
+import ExperienceSection from './ExperienceSection.vue';
 
-
-
+let showContent = ref(true);
+const showContents = () => {
+    showContent.value = !showContent.value;
+}
 let paragraph = ref(false);
 const toggleparagraph = () =>{
   paragraph.value = !paragraph.value;
@@ -28,6 +32,20 @@ const toggleparagraph = () =>{
     <a v-else>Read more...</a>
 </div>
 
+<div class="edu-exp">
+
+    <div class="title" @click="showContents()">
+        <h1 :class="showContent? 'active': ''" data-aos="fade-in" >Education</h1>
+        <h1 :class="!showContent? 'active': ''" data-aos="fade-in" >Experience</h1>
+    </div>
+
+    <div class="components">
+        <EducationSection v-if="showContent" />
+        <ExperienceSection v-else />
+    </div>
+  
+</div>
+
 <div class="details">
     <div class="social-accounts" data-aos="fade-in">
         <a href="https://www.linkedin.com/in/bishwash-pokharel-361450337/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -43,5 +61,26 @@ const toggleparagraph = () =>{
 
 </section>
 
-
 </template>
+
+<style scoped>
+.about .edu-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.about .edu-exp .title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .edu-exp .title h1{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.active{
+    border-bottom: .2rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+</style>

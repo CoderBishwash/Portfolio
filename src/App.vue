@@ -47,18 +47,6 @@ onMounted(()=>{
 
 <div class="line"></div>
 
-  <!-- Education Section -->
-    <EducationSection />
-  <!-- ----------- -->
-
-<div class="line"></div>
-
-  <!-- Experience Section -->
-    <ExperienceSection />
-  <!-- ----------- -->
-
-<div class="line"></div>
-
   <!-- Contact Section -->
     <ContactSection />
   <!-- ----------- -->

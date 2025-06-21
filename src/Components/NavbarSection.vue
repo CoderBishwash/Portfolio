@@ -59,8 +59,6 @@ export default{
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
                         <a href="#project">Projects & Services</a>
-                        <a href="#education">Education</a>
-                        <a href="#experience">Experience</a>
                         <a href="#contact">Contact</a>
                     </nav>
 
@@ -83,8 +81,6 @@ export default{
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
                         <a href="#project">Projects & Services</a>
-                        <a href="#education">Education</a>
-                        <a href="#experience">Experience</a>
                         <a href="#contact">Contact</a>
                     </div>
 </template>
@@ -96,7 +92,7 @@ export default{
 .ham_navbar{
     position: fixed;
     right: 0;
-    top: 11rem;
+    top: 13rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -104,7 +100,7 @@ export default{
     align-items: center;
     gap: 2rem;
     width: 20rem;
-    height: 30rem;
+    height: 20rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
     z-index: 1000;

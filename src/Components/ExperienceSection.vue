@@ -20,10 +20,6 @@ const ExpArray = [
 
 <section class="experience wrapper" id="experience">
 
-<div class="heading" data-aos="fade-in">
-    <h1>Experience</h1>
-</div>
-
 <div class="experience_description">
     <div class="experience_box" v-for="exp in ExpArray" :key="exp.id">
 
