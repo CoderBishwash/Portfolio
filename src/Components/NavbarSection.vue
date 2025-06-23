@@ -63,20 +63,23 @@ export default{
                     </nav>
 
                     <div class="header_icons">
+
+                      <div class="hamburger">
+                                <i v-if="!showham" class="fa-solid fa-bars" @click="ham_menu()"></i>
+                        </div>
+
                         <div class="theme" @click="toggleTheme()" style=" transition: background-color 0.3s ease, color 0.3s ease;">
                                 <i v-if="currentTheme == 'light-theme'" class="fas fa-moon"></i>
                                 <i v-else class="fas fa-sun" ></i>
                         </div>
 
-                        <div class="hamburger">
-                                <i v-if="!showham" class="fa-solid fa-bars" @click="ham_menu()"></i>
-                        </div>
                     </div>
 
             </header>
 
-                    <div class="ham_navbar animate__animated animate__fadeInRight" v-if="showham">
-                        <img src="../images/close.png" alt="close" @click="close_navbar()">
+                    <div class="ham_navbar" data-aos="zoom-in-down" v-if="showham">
+                        <!-- <img src="../images/close.png" alt="close" @click="close_navbar()"> -->
+                         <i class="fa-solid fa-xmark" @click="close_navbar()" ></i>
                         <a href="#home" @click="close_navbar()">Home</a>
                         <a href="#about" @click="close_navbar()">About</a>
                         <a href="#skills" @click="close_navbar()">Skills</a>
@@ -92,16 +95,15 @@ export default{
 .ham_navbar{
     position: fixed;
     right: 0;
-    top: 13rem;
+    top: 8rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 20rem;
+    width: 100%;
     height: 20rem;
-    border-radius: 2rem;
     background-color: var(--primary-color);
     z-index: 1000;
 }
@@ -109,12 +111,18 @@ export default{
     font-size: 1.5rem;
     color: var(--soft-black);
 }
-.ham_navbar img{
-    width: 2rem;
-    height: 2rem;
+.ham_navbar i{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border-radius: 50%;
-    background-color: #333;
+    background-color: var(--soft-black);
+    color: var(--primary-color);
     top: 1rem;
     right: 1rem;
 }
