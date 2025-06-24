@@ -32,7 +32,7 @@
         <span class="bar"><span class="javascript" data-aos="fade-right" data-aos-duration="1000"></span></span>
     </li>
     <li data-aos="fade-in">
-        <h3><img src="/images/tailwind.svg" /> Tailwind CSS - 70%</h3>
+        <h3><img src="/src/images/tailwind.svg" /> Tailwind CSS - 70%</h3>
         <span class="bar"><span class="javascript" data-aos="fade-right" data-aos-duration="1000"></span></span>
     </li>
     <li data-aos="fade-in">
