@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from 'vue';
 import { Vue3Marquee } from 'vue3-marquee';
+import tailwindlogo from '../images/tailwind.svg'
 
 let knowledge = ref('');
 let knowledgearray = ref(["HTML", "CSS", "JavaScript","TailWind CSS","Vue JS","React JS","Laravel","MySQL"]);
