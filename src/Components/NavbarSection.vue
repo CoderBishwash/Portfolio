@@ -78,8 +78,7 @@ export default{
             </header>
 
                     <div class="ham_navbar" data-aos="zoom-in-down" v-if="showham">
-                        <!-- <img src="../images/close.png" alt="close" @click="close_navbar()"> -->
-                         <i class="fa-solid fa-xmark" @click="close_navbar()" ></i>
+                        <i class="fa-solid fa-xmark" @click="close_navbar()" ></i>
                         <a href="#home" @click="close_navbar()">Home</a>
                         <a href="#about" @click="close_navbar()">About</a>
                         <a href="#skills" @click="close_navbar()">Skills</a>
@@ -90,7 +89,7 @@ export default{
 <style scoped>
 .hamburger{
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: white;
 }
 .ham_navbar{
     position: fixed;
@@ -104,12 +103,12 @@ export default{
     gap: 2rem;
     width: 100%;
     height: 20rem;
-    background-color: var(--primary-color);
+    background-color: rgb(42, 41, 41);
     z-index: 1000;
 }
 .ham_navbar a{
     font-size: 1.5rem;
-    color: var(--soft-black);
+    color: white;
 }
 .ham_navbar i{
     width: 2.5rem;
@@ -121,8 +120,8 @@ export default{
     align-items: center;
     position: absolute;
     border-radius: 50%;
-    background-color: var(--soft-black);
-    color: var(--primary-color);
+    background-color: #333;
+    color: white;
     top: 1rem;
     right: 1rem;
 }
