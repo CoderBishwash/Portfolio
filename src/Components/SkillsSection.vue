@@ -32,6 +32,10 @@
         <span class="bar"><span class="javascript" data-aos="fade-right" data-aos-duration="1000"></span></span>
     </li>
     <li data-aos="fade-in">
+        <h3><img src="/images/tailwind.svg" /> Tailwind CSS - 70%</h3>
+        <span class="bar"><span class="javascript" data-aos="fade-right" data-aos-duration="1000"></span></span>
+    </li>
+    <li data-aos="fade-in">
         <h3> <i class="fa-brands fa-laravel" style="color: #FF2D20;"></i>Laravel - 50%</h3>
         <span class="bar" ><span class="laravel" data-aos="fade-right" data-aos-duration="1000"></span></span>
     </li>

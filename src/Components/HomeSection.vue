@@ -45,7 +45,8 @@ displayknowledge();
         <div class="icons">
             <i class="fa-brands fa-html5" style="color: #E34F26;"></i>       
             <i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>    
-            <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>   
+            <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+            <img src="/images/tailwind.svg" style="width: 3.7rem; height: 3.7rem;" alt="tailwind">   
             <i class="fa-brands fa-vuejs" style="color: #4FC08D;"></i>       
             <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
             <i class="fa-brands fa-laravel" style="color: #FF2D20;"></i>
