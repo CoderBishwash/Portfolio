@@ -138,7 +138,8 @@ header .hamburger{display: none;}
 .skills .progressbar li .bar .javascript{width: 70%;}
 .skills .progressbar li .bar .react{width: 80%;}
 .skills .progressbar li .bar .vue{width: 90%;}
-.skills .progressbar li .bar .laravel,.skills .progressbar li .bar .mysql{width: 50%;}
+.skills .progressbar li .bar .laravel{width: 50%;}
+.skills .progressbar li .bar .mysql{width: 70%;}
 
 /* Projects and Services Section */
 

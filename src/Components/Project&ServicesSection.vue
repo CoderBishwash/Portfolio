@@ -63,8 +63,7 @@ let ServicesArray = [
 
   let ShowProj = (projects) => {
       ProjectArray.value.map((element)=>{
-        if(projects.id == element.id) element.active = true;
-        else element.active = false;
+        if(projects.id == element.id) element.active = !element.active;
         });
       }
 
