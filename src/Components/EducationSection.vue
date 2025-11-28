@@ -6,7 +6,6 @@ const EduArray = [
         title: 'SEE (Secondary Education Examination)',
         description: 'Samata Shikshya Niketan',
         date: '2074',
-        grade: 'Grade: 3.65',
         image: '../images/passed.png'
     },
     {
@@ -14,7 +13,6 @@ const EduArray = [
         title: '+2 (Computer Science)',
         description: 'Oxford College of Engineering and Management',
         date: '2075 - 2077',
-        grade: 'Grade: 3.17',
         image: '../images/passed.png'
     },
     {
@@ -22,8 +20,7 @@ const EduArray = [
         title: 'BCA (Bachelor in Computer Application)',
         description: 'Oxford College of Engineering and Management',
         date: '2077 - Present',
-        grade: 'Studying',
-        image: '../images/studying.png'
+        image: '../images/passed.png'
     }
 ];
 
@@ -47,7 +44,6 @@ const EduArray = [
                 <p>{{ edu.date }}</p>
                 <span>
                     <img :src="edu.image" :alt="edu.image">
-                    <strong>{{ edu.grade }}</strong>
                 </span>
             </div>
         </div>
