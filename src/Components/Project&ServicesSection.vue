@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import vrImg from "../images/vr.jpg"
 
 let ProjectArray = ref([
   {
@@ -30,7 +31,7 @@ let ProjectArray = ref([
     id: 4,
     title: 'A Virtual Reality Website',
     description: 'TAILWIND CSS - REACT JS',
-    image: '../images/virtual-reality.jpg',
+    image: vrImg,
     projLink: 'https://github.com/CoderBishwash/Virtual-reality-website',
     active: false
   },
