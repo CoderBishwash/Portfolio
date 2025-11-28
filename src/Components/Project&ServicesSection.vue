@@ -26,6 +26,14 @@ let ProjectArray = ref([
     projLink: 'https://github.com/CoderBishwash/E-Commerce-Website',
     active: false
   },
+  {
+    id: 4,
+    title: 'A Virtual Reality Website',
+    description: 'TAILWIND CSS - REACT JS',
+    image: '../images/virtual-reality.jpg',
+    projLink: 'https://github.com/CoderBishwash/Virtual-reality-website',
+    active: false
+  },
 ]);
 
 let ServicesArray = [
