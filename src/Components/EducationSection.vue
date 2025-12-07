@@ -43,7 +43,7 @@ const EduArray = [
             <div class="grade" data-aos="fade-in">
                 <p>{{ edu.date }}</p>
                 <span>
-                    <img :src="edu.image" :alt="edu.image">
+                    <img :src="edu.image" :alt="edu.image" style="filter: invert(0.7);">
                 </span>
             </div>
         </div>

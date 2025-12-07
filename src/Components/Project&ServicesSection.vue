@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import vrImg from "../images/vr.jpg"
+import aiImg from "../images/ai.jpg"
 
 let ProjectArray = ref([
   {
@@ -33,6 +34,14 @@ let ProjectArray = ref([
     description: 'TAILWIND CSS - REACT JS',
     image: vrImg,
     projLink: 'https://github.com/CoderBishwash/Virtual-reality-website',
+    active: false
+  },
+  {
+    id: 5,
+    title: 'A Simple AI Assistant',
+    description: 'Local AI Chatbot (React/Laravel/Ollama). Full-stack assistant using Ollama for local processing, featuring Voice Input and Auto-Titled History.',
+    image: aiImg,
+    projLink: 'https://github.com/CoderBishwash/AI-Assistant',
     active: false
   },
 ]);
