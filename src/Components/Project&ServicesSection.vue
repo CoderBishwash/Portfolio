@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import vrImg from "../images/vr.jpg"
 import aiImg from "../images/ai.jpg"
+import aiTool from "../images/ai_tools.jpg"
 
 let ProjectArray = ref([
   {
@@ -42,6 +43,14 @@ let ProjectArray = ref([
     description: 'Local AI Chatbot (React/Laravel/Ollama). Full-stack assistant using Ollama for local processing, featuring Voice Input and Auto-Titled History.',
     image: aiImg,
     projLink: 'https://github.com/CoderBishwash/AI-Assistant',
+    active: false
+  },
+  {
+    id: 6,
+    title: 'AI Tools',
+    description: 'Laravel & Livewire AI toolkit for text humanizing, grammar, detection, citations, and refining.',
+    image: aiTool,
+    projLink: 'https://github.com/CoderBishwash/AI-Tools',
     active: false
   },
 ]);
